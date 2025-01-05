@@ -1,0 +1,129 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(to bottom, #f9fafc, #e0eafc);
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* Image Section Styling */
+.image-section {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.experience-image {
+    width: 45%;
+    max-width: 350px;
+    height: 200px;
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Section Styling */
+.table-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.table-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+table {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: white;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Table Header */
+thead {
+    background: #1a5276;
+    color: white;
+}
+
+th {
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Table Body */
+tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+tbody tr:hover {
+    background: #d5eaf7;
+    transition: background 0.3s ease;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 0;
+    background: #2c3e50;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-image {
+        width: 90%;
+        max-width: 400px;
+        height: 220px;
+    }
+
+    table {
+        width: 95%;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

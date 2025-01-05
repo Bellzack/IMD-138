@@ -1,0 +1,80 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f9fafc, #e0eafc);
+    color: #333;
+}
+
+/* Header Styles */
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 30px;
+}
+
+/* Paragraph Styles */
+p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 20px 10%;
+}
+
+/* Highlighted Text */
+p strong {
+    color: #1a5276;
+}
+
+p font {
+    font-weight: bold;
+}
+
+/* Image Styles */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific Styling for Hobbies Section */
+h2 {
+    margin-top: 40px;
+    font-size: 28px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 0;
+    background: #2c3e50;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-image {
+        width: 90%;
+        max-width: 400px;
+        height: 220px;
+    }
+
+    table {
+        width: 95%;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+

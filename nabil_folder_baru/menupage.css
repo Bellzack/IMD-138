@@ -1,0 +1,79 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f0f4f8, #d9e3f0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Navigation Links Container */
+.nav-container {
+    display: flex;
+    justify-content: center; /* Center links horizontally */
+    gap: 20px; /* Space between the links */
+    flex-wrap: wrap; /* Allow the links to wrap on smaller screens */
+    margin-bottom: 30px;
+}
+
+/* Navigation Links Styling */
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #4e73df;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+a:hover {
+    background: #375acb;
+    transform: translateY(-3px);
+}
+
+/* Active Link Styling */
+a:active {
+    background: #2c3e50;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 0;
+    background: #2c3e50;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column; /* Stack the links vertically on smaller screens */
+        align-items: center; /* Ensure the links are centered */
+    }
+
+    a {
+        width: 100%; /* Make links span full width on smaller screens */
+        margin: 5px 0;
+    }
+}
+
+
+

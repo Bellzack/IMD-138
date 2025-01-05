@@ -1,0 +1,101 @@
+/* General Body Styling */
+body {
+
+    background-image: url(video/meteorgif.gif);
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* Photo Album Container */
+.album-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: start;
+}
+
+/* Individual Photo Item */
+.photo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Photo Styling with 3:4 Aspect Ratio */
+.photo-item img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Photo Title */
+.photo-item p {
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 0;
+    background: #2c3e50;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-image {
+        width: 90%;
+        max-width: 400px;
+        height: 220px;
+    }
+
+    table {
+        width: 95%;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
